@@ -3,8 +3,7 @@
 Ce projet a été réalisé dans le cadre du défi technique "Développement et Sport". Il propose une application web interactive visant à prévenir les blessures sportives grâce à des conseils personnalisés et des produits adaptés.
 
 ## 🔗 Lien vers la Démo
-[Insérer ici le lien Vercel/Netlify une fois déployé - ex: https://decathlon-posture-sante.vercel.app]
-
+https://decathlonn2i.alwaysdata.net/
 ---
 
 ## 🚀 Comment lancer le projet
