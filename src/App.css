@@ -1,0 +1,106 @@
+/* src/App.css */
+:root {
+    --decathlon-blue: #0082C3;
+    --decathlon-yellow: #FFEA28;
+    --bg-color: #f4f5f7;
+}
+
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.decathlon-header {
+    background-color: var(--decathlon-blue);
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.decathlon-header h1 { margin: 0; font-style: italic; font-weight: 900; }
+.decathlon-header .light { font-weight: 300; }
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Quiz Styles */
+.quiz-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.question-block { margin-bottom: 2rem; }
+.options button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.options button.selected {
+    background-color: var(--decathlon-blue);
+    color: white;
+    border-color: var(--decathlon-blue);
+}
+
+.cta-button {
+    background-color: var(--decathlon-yellow);
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.cta-button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* Cards Styles */
+.exercise-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 600px) {
+    .exercise-card { flex-direction: row; }
+    .exercise-img { width: 40%; object-fit: cover; }
+}
+
+.exercise-img { width: 100%; height: 250px; object-fit: cover; }
+.content { padding: 1.5rem; flex: 1; }
+
+.alert-box {
+    background-color: #e3f2fd;
+    border-left: 4px solid var(--decathlon-blue);
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.product-chip {
+    display: inline-block;
+    background: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 5px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.8rem;
+    border: 1px solid #ddd;
+}
+.product-chip:hover { background: var(--decathlon-blue); color: white; }
